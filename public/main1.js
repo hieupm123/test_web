@@ -11,5 +11,5 @@ document.getElementById("source").addEventListener("click",function(){
 })
 
 document.getElementById("ve").addEventListener("click",function(){
-    window.location.replace("/public/index.html");
+    window.location.replace("./public/index.html");
 })

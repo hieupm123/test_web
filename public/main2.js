@@ -1,5 +1,5 @@
 function get_data(callback){
-    fetch("http://localhost:3000/data")
+    fetch("https://alonewapppm.herokuapp.com/data")
         .then(function(json){
             return json.json();
         })
@@ -14,7 +14,7 @@ function delete_data(id){
             // 'Content-Type': 'application/x-www-form-urlencoded',
           },
     }
-    fetch(`http://localhost:3000/data/${id}`,option)
+    fetch(`https://alonewapppm.herokuapp.com/data/${id}`,option)
         .then(function(res){
             return res.json();
         })
