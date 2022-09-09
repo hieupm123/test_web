@@ -29,26 +29,6 @@ function delete_data(id){
         })
 }
 
-function delete_data(id){
-    var option = {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json'
-            // 'Content-Type': 'application/x-www-form-urlencoded',
-          },
-    }
-    fetch(`http://localhost:3000/data/${id}`,option)
-        .then(function(res){
-            return res.json();
-        })
-        .then(function(){
-            var a = document.getElementById(`${id}-div`);
-            if(a){
-                a.remove();
-            }
-        })
-}
-
 function day(data){
     var a = []; var text = "";
     for(let i = 0; i < data.length; ++i){
