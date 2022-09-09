@@ -6,11 +6,7 @@ function post_data(data){
           },
         body: JSON.stringify(data)
     }
-    // fetch("https://alonewapppm.herokuapp.com/data",option)
-    //     .then(function(res){
-    //         return res.json();
-    //     })
-    fetch("http://localhost:3000/data",option)
+    fetch("https://alonewapppm.herokuapp.com/data",option)
         .then(function(res){
             return res.json();
         })

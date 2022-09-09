@@ -1,14 +1,5 @@
-// function get_data(callback){
-//     fetch("https://alonewapppm.herokuapp.com/data")
-//         .then(function(json){
-//             return json.json();
-//         })
-//         .then(callback)
-// }
-
-
 function get_data(callback){
-    fetch("http://localhost:3000/data")
+    fetch("https://alonewapppm.herokuapp.com/data")
         .then(function(json){
             return json.json();
         })
@@ -16,25 +7,27 @@ function get_data(callback){
 }
 
 
-// function delete_data(id){
-//     var option = {
-//         method: 'DELETE',
-//         headers: {
-//             'Content-Type': 'application/json'
-//             // 'Content-Type': 'application/x-www-form-urlencoded',
-//           },
-//     }
-//     fetch(`https://alonewapppm.herokuapp.com/data/${id}`,option)
-//         .then(function(res){
-//             return res.json();
-//         })
-//         .then(function(){
-//             var a = document.getElementById(`${id}-div`);
-//             if(a){
-//                 a.remove();
-//             }
-//         })
-// }
+
+
+function delete_data(id){
+    var option = {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+    }
+    fetch(`https://alonewapppm.herokuapp.com/data/${id}`,option)
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(){
+            var a = document.getElementById(`${id}-div`);
+            if(a){
+                a.remove();
+            }
+        })
+}
 
 function delete_data(id){
     var option = {
