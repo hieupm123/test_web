@@ -26,15 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="agileits-top">
 				<form>
           <div style="display: inline">
-            <input id = "source" onclick="
-				get_data(function(data){
-    var t = 0;
-    for(let i = 0; i < Object.keys(data).length; ++i){
-        t += data[i].tien;
-    }
-    alert(`Tổng thu là ${t}`);
-})
-			" type="button" value="Tổng thu các thành viên còn hạn">
+            <input id = "source" onclick="run()" type="button" value="Tổng thu các thành viên còn hạn">
             <input id= "hoang" type="button" value="Admin Lê Hoàng">
             <input id = "hieu" type="button" value="Admin Minh Hiếu">
             <input id = "ve" type="button" value="Về trang chủ">

@@ -16,7 +16,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   background-color: #fff;
 }
 
+#huy3{
+  justify-content: center;
+  width: 4.7rem;
+  height: 2.9rem;
+  margin-right: 0.2rem;
+}
 
+#search_bt{
+  justify-content: center;
+  width: 4.7rem;
+  height: 2.9rem;
+  margin-left: 0.2rem;
+}
 
 .stats{
 
